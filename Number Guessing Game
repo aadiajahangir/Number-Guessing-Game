@@ -1,0 +1,15 @@
+import random
+computer=random.randint(1,50)
+print("Guess the Number from 1 to 50\nYou have 5 chances")
+for i in range (1,6):
+  a=int(input())
+
+  if a>computer:
+    print("you entered Large number")
+    print("try again")
+  elif a<computer:
+    print("you entered Small number")
+    print("try again")
+  else:
+    print("Congratulations")
+    print("You win the game")
